@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tulipanes para Massiel</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8ff;
+            color: #4b0082;
+            text-align: center;
+            padding: 50px;
+            margin: 0;
+            overflow: hidden;
+        }
+        h1 {
+            color: #ff69b4;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            animation: fadeIn 3s ease-in-out;
+        }
+        .tulip {
+            font-size: 80px;
+            margin: 20px 0;
+            animation: grow 2s infinite, swing 5s ease-in-out infinite;
+        }
+        .message {
+            font-size: 1.5em;
+            color: #8a2be2;
+            animation: fadeIn 4s ease-in-out;
+        }
+        .footer {
+            margin-top: 40px;
+            font-size: 1.2em;
+            color: #696969;
+        }
+        @keyframes grow {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+        }
+        @keyframes swing {
+            0%, 100% { transform: rotate(0deg); }
+            50% { transform: rotate(10deg); }
+        }
+        .name {
+            font-size: 3em;
+            color: #ff69b4;
+            margin-top: 20px;
+            animation: pulse 3s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+        .image {
+            width: 200px;
+            margin-top: 30px;
+            animation: fadeIn 3s ease-in-out;
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        .plush-container {
+            margin-top: 20px;
+        }
+        .plush-container img {
+            width: 150px;
+            animation: slideIn 3s ease-in-out;
+        }
+        @keyframes slideIn {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(0); }
+        }
+        /* Fondo con tulipanes infinitos */
+        body {
+            background-image: url(night.jpg);
+            background-size: contain; /* Ajusta el tamaño del fondo para que sea más pequeño */
+            background-repeat: repeat-x; /* Hace que la imagen se repita solo en el eje X */
+            animation: scrollBackground 20s linear infinite; /* Animación para mover el fondo */
+        }
+        
+        @keyframes scrollBackground {
+            0% {
+                background-position: 0 0;
+            }
+            100% {
+                background-position: 100% 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Solo para vos</h1>
+    <p class="tulip">🌷🌷🌷</p>
+    <p class="name">Massiel</p>
+    <p class="message">¡Espero que te guste! </p>
+    <div class="plush-container">
+        <img src="corderopng.png" alt="Peluche con tulipanes">
+    </div>
+    <div class="footer"></div>
+</body>
+</html>
